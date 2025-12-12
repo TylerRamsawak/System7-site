@@ -1,4 +1,4 @@
-/*https://photos.google.com/share/AF1QipMa6o7At0h0TEKsEa30XzgDQNaowt6wXjJEEUMCBcxvUyqyv2rTTdycvbpe7f-cXg?key=eXQ0d191QWFnSjg0cElFMVNHU1BCdlFNLWdCQUtn*/
+/*backgrounds: https://photos.google.com/share/AF1QipMa6o7At0h0TEKsEa30XzgDQNaowt6wXjJEEUMCBcxvUyqyv2rTTdycvbpe7f-cXg*/
 
 @font-face {
     /*https://nowintime.itch.io/apple-system-1-font*/
@@ -75,7 +75,7 @@ footer {
   );
 }
 
-#viewport {
+#viewport { /*simulate desktop*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -85,6 +85,7 @@ footer {
     overflow:hidden;
 }
 
+/*system 7 menubar*/
 #menubar {
     display: flex;
     align-items: center;
@@ -154,6 +155,7 @@ footer {
     }
 }
 
+/*window and taskbar styles*/
 #window {
     position: relative;
     margin: 25px;
@@ -202,7 +204,7 @@ footer {
     user-select: none;
 }
 
-/*CONTENT STYLING*/
+/*content page styles*/
 .content {
     font-family:Arial, Helvetica, sans-serif, auto;
     padding: 10px;
@@ -214,10 +216,10 @@ footer {
 }
 
 .content img {
-    max-width: 100%;   /* never wider than container */
-    height: auto;      /* maintain aspect ratio */
-    width: auto;       /* maintain aspect ratio */
-    object-fit: contain; /* scales down while keeping aspect ratio */
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
 }
 
 .tophand-content img {
@@ -236,17 +238,49 @@ footer {
     width: 20%;
 }
 
-.images-horizontal-display {
+/*horizontal image carousel*/
+.gallery-container {
     display: flex;
-    overflow-x: auto;
+    align-items: center;
 }
 
-.images-horizontal-display img {
+.gallery-container button {
+    image-rendering: pixelated;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: url("cursors/hand.cur"), auto;
+}
+
+.image-left {
+    background-image: url("icons/left2.bmp");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.image-right {
+    background-image: url("icons/right2.bmp");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.gallery-images {
+    display: flex;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.gallery-images img {
     display: block;
     max-height: 300px;
-    height: auto;
+    padding: 5px;
+    padding-top: 0;
 }
 
+/*responsive stuff*/
 @media only screen and (max-width: 720px) {
     #clock {
         display: none;

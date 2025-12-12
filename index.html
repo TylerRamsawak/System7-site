@@ -5,8 +5,6 @@
         <link rel="icon" type="image/bmp" href="icons/logo2.bmp">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <audio id="startup" src="sounds/StartupPowerMac.wav"></audio>
-    <!--https://froods.ca/~dschaub/sound.html-->
     <body>
         <div id="screen">
             <nav id="menubar">
@@ -76,10 +74,14 @@
                                     I can code, too, but not too well. Although I am good at Python and can barely write C. I am in a C++ class at school, so maybe I can get my 
                                     embedded programs and real time operating systems ported to a better, faster language than Micropython.
                                     I love music and I collect vinyl!!!
-                                    <div class="images-horizontal-display">
-                                        <img src="images/microtac-shell.png">
-                                        <img src="images/microtac-pcb.png">
-                                        <img src="images/m2a-glamorous.png">
+                                    <div class="gallery-container">
+                                        <button class="image-left" type="button"></button>
+                                        <div class="gallery-images">
+                                            <img src="images/microtac-shell.png">
+                                            <img src="images/microtac-pcb.png">
+                                            <img src="images/m2a-glamorous.png">
+                                        </div>
+                                        <button class="image-right" type="button"></button>
                                     </div>
                                 </p>
                             </div>
@@ -92,45 +94,72 @@
                     <div id="projects-content" class="content" style="display: none;">
                         <p>I've been making electronics since I was maybe 8! Here are a few of them:</p>
                         <img src="images/hackclub.png" id="hackclub" style="position: absolute; top: 40px; right: 50px; height: 80px;">
+                        
                         <h3>Motorola MicroTAC 9800X 4G LTE Retrofit (2023)</h3>
-                        <div class="images-horizontal-display">
-                            <img src="images/microtac-bob.png">
-                            <img src="images/microtac-paste.png">
-                            <img src="images/microtac-pcb.png">
-                            <img src="images/microtac-shell.png">
-                            <img src="images/microtac-dynatac.png">
+                        <p>Use the arrows to see more photos!</p>
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <img src="images/microtac-bob.png">
+                                <img src="images/microtac-paste.png">
+                                <img src="images/microtac-pcb.png">
+                                <img src="images/microtac-shell.png">
+                                <img src="images/microtac-dynatac.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
+                        
                         <h3>HDSP-211X Display Driver & Library (2025)</h3>
-                        <div class="images-horizontal-display">
-                            <img src="images/hdsp-name.png">
-                            <img src="images/hdsp-copper.png">
-                            <img src="images/hdsp-reflow.png">
-                            <img src="images/hdsp-microscope.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <img src="images/hdsp-name.png">
+                                <img src="images/hdsp-copper.png">
+                                <img src="images/hdsp-reflow.png">
+                                <img src="images/hdsp-microscope.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                         <h3>NFC Business Cards (2025)</h3>
-                        <div class="images-horizontal-display">
-                            <img src="images/biz-card-render.png">
-                            <img src="images/biz-card-pcb.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <img src="images/biz-card-render.png">
+                                <img src="images/biz-card-pcb.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                         <h3>Automatic USB-Interfaced Typewriter (2024)</h3>
-                        <div class="images-horizontal-display">
-                            <video width="320" height="240" controls>
-                                <source src="videos/typewriter-video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <img src="images/typewriter-pcb.png">
-                            <img src="images/typewriter-weezer.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <video width="320" height="240" controls>
+                                    <source src="videos/typewriter-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <img src="images/typewriter-pcb.png">
+                                <img src="images/typewriter-weezer.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                         <h3>Cigar Box Electric Guitar Amp (2025)</h3>
-                        <div class="images-horizontal-display">
-                            <img src="images/amp-pcb.png">
-                            <img src="images/amp-box.png">
-                            <img src="images/amp-pcb2.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <img src="images/amp-pcb.png">
+                                <img src="images/amp-box.png">
+                                <img src="images/amp-pcb2.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                         <h3>Morse Code Shoes (2023)</h3>
-                        <div class="images-horizontal-display">
-                            <img src="images/shoes-1.png">
-                            <img src="images/shoes-2.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <img src="images/shoes-1.png">
+                                <img src="images/shoes-2.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                     </div>
                     <div id="hobbies-content" class="content" style="display: none;">
@@ -147,56 +176,96 @@
                         <h3>Lightbulbs</h3>
                         <p>I have 9x 90W Low-Pressure Sodium Bulbs (LPS), 2x 180W LPS, 6x 1000W Metal-Halides (MH),
                             2x 450W MH, 2x 100W HPS, and 1x exit sign</p>
-                        <div class="images-horizontal-display">
-                            <img src="images/lps1.png">
-                            <img src="images/lps2.png">
-                            <img src="images/exit-sign.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <img src="images/lps1.png">
+                                <img src="images/lps2.png">
+                                <img src="images/exit-sign.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                         <h3>Reel to Reel</h3>
                         <p>I love reel to reel machines because they're so pretty to watch, and I believe they have a lovely sound.
                             I have more than the two here, but these are my favorite</p>
-                        <div class="images-horizontal-display">
-                            <video width="320" height="240" controls>
-                                <source src="videos/r2r-video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <img src="images/r2r-couple.png">
-                            <img src="images/r2r-x10r.png">
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <video width="320" height="240" controls>
+                                    <source src="videos/r2r-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <img src="images/r2r-couple.png">
+                                <img src="images/r2r-x10r.png">
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                     </div>
                     <div id="emo-music-content" class="content" style="display: none;">
                         <p>Me and my friends play songs sometimes. Here are a couple of them (theyre not good yet!!).
                             And then there are some of my favorite album covers below :P</p>
-                        <div class="images-horizontal-display">
-                            <video width="320" height="240" controls>
-                                <source src="videos/arthur-coffee.mp4" type="video/mp4">
-                            </video>
-                            <video width="320" height="240" controls>
-                                <source src="videos/haunt-you.MP4" type="video/mp4">
-                            </video>
-                            <video width="320" height="240" controls>
-                                <source src="videos/bojack.MP4" type="video/mp4">
-                            </video>
-                            <video width="320" height="240" controls>
-                                <source src="videos/tyler bass.MOV" type="video/mp4">
-                            </video>
+                        <div class="gallery-container">
+                            <button class="image-left" type="button"></button>
+                            <div class="gallery-images">
+                                <video width="320" height="240" controls>
+                                    <source src="videos/arthur-coffee.mp4" type="video/mp4">
+                                </video>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/haunt-you.MP4" type="video/mp4">
+                                </video>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/bojack.MP4" type="video/mp4">
+                                </video>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/tyler bass.MOV" type="video/mp4">
+                                </video>
+                            </div>
+                            <button class="image-right" type="button"></button>
                         </div>
                     </div>
 
                 </div>
-                <footer>
+                <footer> <!--put friends' website links here-->
                 </footer>
             </div>
         </div>
     </body>
 </html>
 
-<!--startup sound-->
 <script>
-window.addEventListener("DOMContentLoaded", () => {
-    const audio = document.getElementById("startup");
-    audio.play();
-});
+    const galleryContainers = document.getElementsByClassName("gallery-container");
+    var currentPosition = 0; //the page starts with images all the way left
+
+    for (var i = 0; i < galleryContainers.length; i++) {
+        const galleryImages = galleryContainers[i].querySelector(".gallery-images");
+        const buttonLeft = galleryContainers[i].querySelector(".image-left");
+        const buttonRight = galleryContainers[i].querySelector(".image-right");
+
+        buttonLeft.addEventListener("mousedown", () => {
+            currentPosition = galleryImages.scrollLeft;
+            console.log("gallery position: " + currentPosition);
+            buttonLeft.style.backgroundImage = "url('icons/big-click1.bmp')"; //use mousedown instead of click to change backgrounds
+            galleryImages.scrollLeft -=300;
+            currentPosition = galleryImages.scrollLeft;
+
+            //reset background image
+            buttonLeft.addEventListener("mouseup", function() {
+                buttonLeft.style.backgroundImage = "url('icons/left2.bmp')";
+            })
+        });
+
+        buttonRight.addEventListener("mousedown", () => {
+            console.log("current position: " + galleryImages.scrollLeft)
+            buttonRight.style.backgroundImage = "url('icons/big-click1.bmp')";
+            galleryImages.scrollLeft +=300;
+            currentPosition = galleryImages.scrollLeft;
+
+            //reset background image
+            buttonRight.addEventListener("mouseup", function() {
+                buttonRight.style.backgroundImage = "url('icons/right2.bmp')";
+            })
+        });
+    };
 </script>
 
 <!--set and manage clock-->
@@ -315,6 +384,4 @@ const backgrounds = [
 const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 const viewport = document.getElementById("viewport");
 viewport.style.backgroundImage = `url('backgrounds/${randomBackground}')`;
-
 </script>
-
