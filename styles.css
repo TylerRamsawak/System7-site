@@ -134,6 +134,11 @@ footer {
     margin-left: 20px;
 }
 
+#menubar-socials a:hover {
+    cursor: url("cursors/hand.cur"), auto;
+    outline: 2px black solid;
+}
+
 #clock {
     margin-left: auto;
     margin-right: 20px;
